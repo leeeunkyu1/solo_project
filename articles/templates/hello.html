@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Hello My {{ name }} !!! </h1>
+    <P>첫번째 태그는 {{ tags.2|upper }}</P>
+    <p>모든 책 목록</p>
+    
+    <ul>
+        {% for book in books %}
+            <li>{{ book }}</li>
+        {% endfor %}
+        
+    </ul>
+{% endblock content %}

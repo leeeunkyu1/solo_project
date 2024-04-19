@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+
+
+{% block content %}
+    <h1>INDEX</h1>
+
+<img src="{% static "articles/erth.jpg" %}" >
+
+
+<ul>
+    <li><a href="{% url 'articles:articles' %}">글 목록</a><br></li>
+    </li><a href="{% url 'articles:data_throw' %}">Throw</a><br></li>
+    </li><a href="{% url 'users:users' %}">Users</a><br></li>
+</ul>
+{% endblock content %}  
